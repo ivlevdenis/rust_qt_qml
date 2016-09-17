@@ -1,0 +1,40 @@
+[root]
+name = "qtdemo"
+version = "0.1.0"
+dependencies = [
+ "rustcxx_codegen 0.1.0 (git+https://github.com/google/rustcxx.git)",
+ "rustcxx_plugin 0.1.0 (git+https://github.com/google/rustcxx.git)",
+]
+
+[[package]]
+name = "gcc"
+version = "0.3.35"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rustcxx_codegen"
+version = "0.1.0"
+source = "git+https://github.com/google/rustcxx.git#7a662d8cf419c74a17393828fdc1f48e4199ee0b"
+dependencies = [
+ "gcc 0.3.35 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustcxx_common 0.1.0 (git+https://github.com/google/rustcxx.git)",
+]
+
+[[package]]
+name = "rustcxx_common"
+version = "0.1.0"
+source = "git+https://github.com/google/rustcxx.git#7a662d8cf419c74a17393828fdc1f48e4199ee0b"
+
+[[package]]
+name = "rustcxx_plugin"
+version = "0.1.0"
+source = "git+https://github.com/google/rustcxx.git#7a662d8cf419c74a17393828fdc1f48e4199ee0b"
+dependencies = [
+ "rustcxx_common 0.1.0 (git+https://github.com/google/rustcxx.git)",
+]
+
+[metadata]
+"checksum gcc 0.3.35 (registry+https://github.com/rust-lang/crates.io-index)" = "91ecd03771effb0c968fd6950b37e89476a578aaf1c70297d8e92b6516ec3312"
+"checksum rustcxx_codegen 0.1.0 (git+https://github.com/google/rustcxx.git)" = "<none>"
+"checksum rustcxx_common 0.1.0 (git+https://github.com/google/rustcxx.git)" = "<none>"
+"checksum rustcxx_plugin 0.1.0 (git+https://github.com/google/rustcxx.git)" = "<none>"

@@ -1,0 +1,13 @@
+[package]
+name = "qtdemo"
+build = "build.rs"
+version = "0.1.0"
+authors = ["Ivlev Denis <di-erz@yandex.ru>"]
+
+[dependencies]
+
+[dependencies.rustcxx_plugin]
+git = "https://github.com/google/rustcxx.git"
+
+[build-dependencies.rustcxx_codegen]
+git = "https://github.com/google/rustcxx.git"
